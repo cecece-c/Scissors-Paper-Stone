@@ -1,1 +1,1 @@
-# Scissors-Paper-Stone
+# Scissors, Paper, Stone
