@@ -9,11 +9,11 @@ def exit_program():
         time.sleep(1)
 
 
-# Generate computer's choice of scissors, paper or stone, and store value in 'computer_choice' (Integer)
+# Generate and store computer's choice of scissors, paper or stone in 'computer_choice' (Integer)
 computer_choice = random.randint(0, 2)
 
 
-# Get human's choice and store value in 'human_choice' (String)
+# Get human's choice and store it in 'human_choice' (String)
 while True:
     human_choice = input("\nWhat do you choose? Enter '0' for scissors, '1' for paper or '2' for stone.\n")
     if human_choice == "0" or human_choice == "1" or human_choice == "2":
@@ -22,7 +22,7 @@ while True:
         print("\nInvalid input. Only the listed options are available.")
 
 
-# Compare choices and determine winner. Exit program afterwards
+# Display results and call 'exit_program()'
 if human_choice == "0" and computer_choice == 0:
     print("\nYou chose scissors.")
     print("\nComputer chose scissors.")
